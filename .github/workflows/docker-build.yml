@@ -1,13 +1,14 @@
 name: ci
 
+environment:
+  name: secrets
+
 on:
   push:
     branches:
       - 'master'
 
 jobs:
-  environment:
-    name: secrets
   docker:
     runs-on: ubuntu-latest
     steps:

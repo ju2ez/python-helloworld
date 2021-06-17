@@ -6,7 +6,7 @@ on:
       - 'master'
 
 jobs:
-  environment: secrets
+environment: secrets
   docker:
     runs-on: ubuntu-latest
     steps:
